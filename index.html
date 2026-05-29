@@ -3,197 +3,376 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-    <title>RAG Explained | Retrieval Augmented Generation</title>
+<title>
+RAG Explained | Learn with Mevi Technologies
+</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet"
+href="style.css">
 
 </head>
 
 <body>
 
-    <!-- ==========================
-         NAVBAR
-    =========================== -->
+<!-- =====================================
+NAVBAR
+===================================== -->
 
-    <nav class="navbar">
+<nav class="navbar">
 
-        <div class="logo">
-           Learn  RAG  with Mevi  Technologies
-        </div>
+<div class="logo">
 
-        <ul class="nav-links">
+<i class="bi bi-book-half"></i>
 
-            <li><a href="#intro">Introduction</a></li>
+Learn RAG with Mevi Technologies
 
-            <li><a href="#workflow">Workflow</a></li>
+</div>
 
-            <li><a href="#embeddings">Embeddings</a></li>
+<ul class="nav-links">
 
-            <li><a href="#vector">Vector DB</a></li>
+<li>
+<a href="#intro">
+Introduction
+</a>
+</li>
 
-            <li><a href="#project">Project</a></li>
+<li>
+<a href="#workflow">
+Workflow
+</a>
+</li>
 
-        </ul>
+<li>
+<a href="#chunking">
+Chunking
+</a>
+</li>
 
-    </nav>
+<li>
+<a href="#embeddings">
+Embeddings
+</a>
+</li>
 
+<li>
+<a href="#vector">
+Vector DB
+</a>
+</li>
 
+<li>
+<a href="#project">
+Project
+</a>
+</li>
 
-    <!-- ==========================
-         HERO
-    =========================== -->
+</ul>
 
-    <section class="hero">
+</nav>
 
-        <div class="hero-content">
+<!-- =====================================
+HERO
+===================================== -->
 
-            <h1>
-                Retrieval-Augmented Generation (RAG) Explained
-            </h1>
-<h2>Learn with Mevi Technologies</h2>
-            <p>
+<section class="hero">
 
-                Learn RAG from Beginner to Advanced with Architecture,
-                Embeddings, Vector Databases, Similarity Search,
-                LangChain, ChromaDB, Groq and Real World Projects.
+<div class="hero-content">
 
-            </p>
+<h1>
 
-            <a href="#intro" class="btn">
-                Start Learning
-            </a>
+Retrieval-Augmented Generation
 
-        </div>
+(RAG)
 
-    </section>
+</h1>
 
+<h2>
 
+Learn with Mevi Technologies
 
-    <!-- ==========================
-         INTRODUCTION
-    =========================== -->
+</h2>
 
-    <section class="section" id="intro">
+<p>
 
-        <div class="section-header">
+Master one of the most important technologies
+powering modern AI systems.
 
-            <h2>
-                What is RAG?
-            </h2>
+Understand Chunking,
+Embeddings,
+Vector Databases,
+LangChain,
+ChromaDB,
+Groq,
+Llama 3,
+and Real World Projects.
 
-        </div>
+</p>
 
-        <div class="card">
+<a href="#intro"
+class="btn">
 
-            <p>
+Start Learning
 
-                RAG stands for Retrieval-Augmented Generation.
+</a>
 
-            </p>
-
-            <p>
-
-                It is a technique that combines
-                Information Retrieval and Large Language Models.
-
-            </p>
-
-            <p>
-
-                Instead of relying only on the knowledge stored
-                inside an LLM, RAG allows AI systems to retrieve
-                information from external documents before generating answers.
-
-            </p>
-
-            <p>
-
-                Think of RAG as an Open Book Exam.
-
-            </p>
-
-            <p>
-
-                The AI can search documents,
-                retrieve relevant information,
-                and then answer the user's question.
-
-            </p>
-
-        </div>
-
-    </section>
-<!-- ==========================
-     RAG ARCHITECTURE IMAGE
-=========================== -->
-
-<section class="section">
-
-    <div class="section-header">
-
-        <h2>
-            🏗️ Complete RAG Architecture
-        </h2>
-
-        <p>
-
-            Before diving into Chunking, Embeddings, and Vector Databases,
-            let's understand the complete RAG workflow from start to finish.
-
-        </p>
-
-    </div>
-
-    <div class="card">
-
-        <img
-            src="Rag.png"
-            alt="RAG Architecture"
-            style="
-                width:100%;
-                border-radius:20px;
-                margin-bottom:20px;
-            "
-        >
-
-        <h3>
-            Understanding the Architecture
-        </h3>
-
-        <p>
-
-            RAG consists of two major phases:
-
-        </p>
-
-        <ul>
-
-            <li>
-                <strong>Indexing Phase (Offline)</strong>
-            </li>
-
-            <li>
-                <strong>Retrieval + Generation Phase (Online)</strong>
-            </li>
-
-        </ul>
-
-    </div>
+</div>
 
 </section>
+
+<!-- =====================================
+INTRODUCTION
+===================================== -->
+
+<section
+class="section"
+id="intro">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-info-circle"></i>
+
+Introduction to RAG
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<p>
+
+RAG stands for
+Retrieval-Augmented Generation.
+
+</p>
+
+<p>
+
+It is one of the most important
+AI architectures used today.
+
+</p>
+
+<p>
+
+Instead of relying only on the
+knowledge already present inside
+a Large Language Model,
+RAG allows the model to search
+external information sources
+before generating answers.
+
+</p>
+
+<p>
+
+Think of RAG as an Open Book Exam.
+
+</p>
+
+<p>
+
+Instead of answering purely from memory,
+the AI first searches documents,
+retrieves relevant information,
+and then generates an answer.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================
+WHY RAG
+===================================== -->
+
 <section class="section">
 
 <div class="section-header">
 
 <h2>
-🔄 Understanding RAG Step By Step
+
+<i class="bi bi-question-circle"></i>
+
+Why Do We Need RAG?
+
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-exclamation-triangle"></i>
+
+Hallucinations
+
+</h3>
+
+<p>
+
+LLMs sometimes generate
+incorrect information.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-clock-history"></i>
+
+Outdated Knowledge
+
+</h3>
+
+<p>
+
+Models may not know
+recent information.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-lock"></i>
+
+Private Data
+
+</h3>
+
+<p>
+
+Company documents
+are not included
+in training.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-cash-stack"></i>
+
+Expensive Retraining
+
+</h3>
+
+<p>
+
+Retraining LLMs
+is expensive and slow.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+RAG IMAGE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-diagram-3"></i>
+
+Complete RAG Architecture
+
+</h2>
+
+<p>
+
+Understanding the entire workflow
+before diving into individual concepts.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="Rag.png"
+alt="RAG Architecture"
+style="
+width:100%;
+border-radius:20px;
+margin-bottom:25px;">
+
+<h3>
+
+Two Major Phases
+
+</h3>
+
+<ul>
+
+<li>
+
+Indexing Phase (Offline)
+
+</li>
+
+<li>
+
+Retrieval + Generation Phase (Online)
+
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- =====================================
+STEP BY STEP
+===================================== -->
+
+<section
+class="section"
+id="workflow">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-arrow-repeat"></i>
+
+RAG Step By Step
+
 </h2>
 
 </div>
@@ -201,256 +380,238 @@
 <div class="workflow">
 
 <div class="step">
-📄 Step 1: Load Documents
+
+1. Load Documents
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-✂️ Step 2: Chunk Documents
+
+2. Chunk Documents
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-🧠 Step 3: Generate Embeddings
+
+3. Generate Embeddings
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-🗄️ Step 4: Store in Vector Database
+
+4. Store in Vector Database
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-❓ Step 5: User Asks Question
+
+5. User Asks Question
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-🔍 Step 6: Convert Question to Embedding
+
+6. Generate Query Embedding
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-📚 Step 7: Retrieve Similar Chunks
+
+7. Similarity Search
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-➕ Step 8: Add Context to Prompt
+
+8. Retrieve Top Chunks
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-🤖 Step 9: Send to LLM
+
+9. Augment Prompt
+
 </div>
 
 <div class="arrow">↓</div>
 
 <div class="step">
-✅ Step 10: Generate Final Answer
+
+10. LLM Generates Answer
+
 </div>
 
 </div>
 
 </section>
 
+<!-- =====================================
+RETRIEVAL AUGMENTATION GENERATION
+===================================== -->
 
-    <!-- ==========================
-         WHY RAG
-    =========================== -->
-
-    <section class="section">
-
-        <div class="section-header">
-
-            <h2>
-                Why Do We Need RAG?
-            </h2>
-
-        </div>
-
-        <div class="feature-grid">
-
-            <div class="feature-box">
-
-                <h3>❌ Hallucinations</h3>
-
-                <p>
-                    LLMs can sometimes generate incorrect information.
-                </p>
-
-            </div>
-
-            <div class="feature-box">
-
-                <h3>❌ Outdated Knowledge</h3>
-
-                <p>
-                    Models may not know recent events.
-                </p>
-
-            </div>
-
-            <div class="feature-box">
-
-                <h3>❌ Private Data</h3>
-
-                <p>
-                    Company documents are not part of training.
-                </p>
-
-            </div>
-
-            <div class="feature-box">
-
-                <h3>❌ Expensive Training</h3>
-
-                <p>
-                    Retraining LLMs is costly.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==========================
-         RAG BREAKDOWN
-    =========================== -->
-
-    <section class="section">
-
-        <div class="section-header">
-
-            <h2>
-                Understanding RAG
-            </h2>
-
-        </div>
-
-        <div class="three-grid">
-
-            <div class="card">
-
-                <h3>🔍 Retrieval</h3>
-
-                <p>
-
-                    Search relevant information
-                    from documents.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <h3>➕ Augmentation</h3>
-
-                <p>
-
-                    Add retrieved information
-                    into the prompt.
-
-                </p>
-
-            </div>
-
-            <div class="card">
-
-                <h3>🤖 Generation</h3>
-
-                <p>
-
-                    Generate final response
-                    using LLM.
-
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==========================
-         WORKFLOW
-    =========================== -->
-
-    <section class="section" id="workflow">
-
-        <div class="section-header">
-
-            <h2>
-                Complete RAG Workflow
-            </h2>
-
-        </div>
-
-        <div class="workflow">
-
-            <div class="step">
-                User Question
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Convert to Embedding
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Search Vector Database
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Retrieve Relevant Chunks
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Augment Prompt
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                LLM Generates Answer
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==========================
-         CHUNKING
-    =========================== -->
 <section class="section">
 
 <div class="section-header">
 
 <h2>
-📄 What is Chunking?
+
+<i class="bi bi-layers"></i>
+
+Understanding Retrieval,
+Augmentation & Generation
+
+</h2>
+
+</div>
+
+<div class="three-grid">
+
+<div class="card">
+
+<h3>
+
+Retrieval
+
+</h3>
+
+<p>
+
+Search relevant information
+from knowledge sources.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Augmentation
+
+</h3>
+
+<p>
+
+Add retrieved information
+into the prompt.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Generation
+
+</h3>
+
+<p>
+
+Generate final answer
+using the LLM.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+INPUT OUTPUT EXAMPLE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-arrow-left-right"></i>
+
+Input vs Output Example
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+INPUT
+
+What are symptoms
+of diabetes?
+
+--------------------------------
+
+RAG SYSTEM
+
+Searches Medical Documents
+
+Retrieves Relevant Chunks
+
+Adds Context To Prompt
+
+--------------------------------
+
+OUTPUT
+
+Common symptoms include:
+
+• Excessive thirst
+
+• Frequent urination
+
+• Fatigue
+
+• Blurred vision
+
+• Slow wound healing
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- =====================================
+CHUNKING INTRODUCTION
+===================================== -->
+
+<section
+class="section"
+id="chunking">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-scissors"></i>
+
+What is Chunking?
+
 </h2>
 
 </div>
@@ -459,70 +620,187 @@
 
 <p>
 
-Imagine uploading a 500-page PDF into a RAG system.
+Chunking is the process of breaking large documents
+into smaller pieces before storing them inside a
+Vector Database.
 
 </p>
 
 <p>
 
-Sending the entire PDF to the LLM is impossible because
-LLMs have context window limitations.
+One of the biggest limitations of Large Language Models
+is the Context Window.
 
 </p>
 
 <p>
 
-Therefore we split large documents into smaller pieces.
+An LLM cannot read unlimited information at once.
 
 </p>
 
 <p>
 
-These smaller pieces are called Chunks.
+If we upload a 500-page PDF directly,
+the model cannot process everything efficiently.
 
 </p>
 
 <p>
 
-Chunking is one of the most important steps in RAG.
+Therefore, we split the document into smaller parts.
+
+</p>
+
+<p>
+
+These smaller parts are called Chunks.
 
 </p>
 
 </div>
 
-<div class="card">
+</section>
 
-<h3>
+<!-- =====================================
+WHY CHUNKING
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-question-circle"></i>
+
 Why Do We Need Chunking?
+
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-speedometer2"></i>
+
+Faster Retrieval
+
 </h3>
 
-<ul>
+<p>
 
-<li>Reduces token usage</li>
+Searching small chunks is much faster
+than searching an entire document.
 
-<li>Improves retrieval accuracy</li>
+</p>
 
-<li>Makes search faster</li>
+</div>
 
-<li>Improves response quality</li>
+<div class="feature-box">
 
-<li>Helps vector databases work efficiently</li>
+<h3>
 
-</ul>
+<i class="bi bi-bullseye"></i>
+
+Higher Accuracy
+
+</h3>
+
+<p>
+
+Relevant information can be found
+more accurately.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-cpu"></i>
+
+Lower Token Usage
+
+</h3>
+
+<p>
+
+Reduces prompt size and API cost.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+<i class="bi bi-lightning"></i>
+
+Better Responses
+
+</h3>
+
+<p>
+
+Only useful information reaches the LLM.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+CHUNKING EXAMPLE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-arrow-left-right"></i>
+
+Chunking Example
+
+</h2>
 
 </div>
 
 <div class="card">
-
-<h3>
-Example
-</h3>
 
 <pre>
 
-100 Page PDF
+INPUT
 
-↓
+100 Page Medical PDF
+
+--------------------------------
+
+Page 1
+
+Page 2
+
+Page 3
+
+...
+
+Page 100
+
+--------------------------------
+
+OUTPUT
 
 Chunk 1
 
@@ -534,21 +812,32 @@ Chunk 4
 
 Chunk 5
 
-↓
+Chunk 6
 
-Stored in Vector Database
+...
+
+Chunk N
 
 </pre>
 
 </div>
 
 </section>
+
+<!-- =====================================
+CHUNKING METHODS
+===================================== -->
+
 <section class="section">
 
 <div class="section-header">
 
 <h2>
-📚 Chunking Methods
+
+<i class="bi bi-grid"></i>
+
+Types of Chunking
+
 </h2>
 
 </div>
@@ -558,48 +847,132 @@ Stored in Vector Database
 <tr>
 <th>Method</th>
 <th>Description</th>
+<th>Usage</th>
 </tr>
 
 <tr>
-<td>Fixed Chunking</td>
-<td>Split every 500 characters or tokens</td>
+<td>Fixed Size Chunking</td>
+<td>Split every fixed number of characters</td>
+<td>Simple projects</td>
 </tr>
 
 <tr>
-<td>Recursive Chunking</td>
-<td>Most common LangChain strategy</td>
+<td>Token Chunking</td>
+<td>Split based on token count</td>
+<td>Production RAG</td>
 </tr>
 
 <tr>
 <td>Sentence Chunking</td>
-<td>Split by sentences</td>
+<td>Split using sentence boundaries</td>
+<td>QA Systems</td>
 </tr>
 
 <tr>
 <td>Paragraph Chunking</td>
 <td>Split by paragraphs</td>
+<td>Articles & Blogs</td>
+</tr>
+
+<tr>
+<td>Recursive Chunking</td>
+<td>Most popular LangChain approach</td>
+<td>General Purpose</td>
 </tr>
 
 <tr>
 <td>Semantic Chunking</td>
-<td>Split based on meaning</td>
+<td>Split by meaning/context</td>
+<td>Advanced Systems</td>
 </tr>
 
 </table>
 
 </section>
 
+<!-- =====================================
+CHUNK OVERLAP
+===================================== -->
 
-    <!-- ==========================
-         EMBEDDINGS
-    =========================== -->
-
-    <section class="section" id="embeddings">
+<section class="section">
 
 <div class="section-header">
 
 <h2>
-🧠 What are Embeddings?
+
+<i class="bi bi-intersect"></i>
+
+What is Chunk Overlap?
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<p>
+
+Sometimes important information lies
+between two chunks.
+
+</p>
+
+<p>
+
+To avoid losing context,
+we intentionally repeat some content.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+Chunk 1
+
+AI is transforming healthcare.
+Doctors use AI for diagnosis.
+
+--------------------------------
+
+Chunk 2
+
+Doctors use AI for diagnosis.
+AI improves patient outcomes.
+
+</pre>
+
+</div>
+
+<p>
+
+Notice how one sentence appears
+in both chunks.
+
+This is called Chunk Overlap.
+
+</p>
+
+</section>
+
+<!-- =====================================
+EMBEDDINGS
+===================================== -->
+
+<section
+class="section"
+id="embeddings">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-cpu"></i>
+
+What Are Embeddings?
+
 </h2>
 
 </div>
@@ -620,83 +993,177 @@ Computers understand numbers.
 
 <p>
 
-Embeddings convert text into numerical vectors.
+Embeddings convert human language
+into mathematical vectors.
 
 </p>
 
 <p>
 
-These vectors capture the meaning of the text.
+These vectors capture the meaning
+of words and sentences.
 
 </p>
-
-</div>
-
-<div class="card">
-
-<h3>
-Example
-</h3>
-
-<pre>
-
-Dog
-
-↓
-
-[0.23, 0.54, 0.11, ...]
-
-Cat
-
-↓
-
-[0.21, 0.57, 0.13, ...]
-
-</pre>
-
-<p>
-
-Notice that Dog and Cat produce similar vectors.
-
-</p>
-
-<p>
-
-This is because they have similar meanings.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-Why Embeddings Matter
-</h3>
-
-<ul>
-
-<li>Enable semantic search</li>
-
-<li>Enable similarity matching</li>
-
-<li>Improve retrieval accuracy</li>
-
-<li>Power vector databases</li>
-
-<li>Help understand context</li>
-
-</ul>
 
 </div>
 
 </section>
+
+<!-- =====================================
+EMBEDDING EXAMPLE
+===================================== -->
+
 <section class="section">
 
 <div class="section-header">
 
 <h2>
+
+<i class="bi bi-arrow-left-right"></i>
+
+Embedding Example
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+INPUT
+
+Dog
+
+↓
+
+Embedding Model
+
+↓
+
+OUTPUT
+
+[0.23, 0.81, 0.55, 0.72...]
+
+--------------------------------
+
+INPUT
+
+Cat
+
+↓
+
+Embedding Model
+
+↓
+
+OUTPUT
+
+[0.24, 0.80, 0.57, 0.71...]
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<p>
+
+Notice something interesting.
+
+</p>
+
+<p>
+
+Dog and Cat produce similar vectors.
+
+</p>
+
+<p>
+
+This happens because both have
+similar meanings.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================
+WHY EMBEDDINGS
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-lightbulb"></i>
+
+Why Embeddings Matter
+
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+Semantic Search
+
+</div>
+
+<div class="feature-box">
+
+Similarity Search
+
+</div>
+
+<div class="feature-box">
+
+Document Retrieval
+
+</div>
+
+<div class="feature-box">
+
+Recommendation Systems
+
+</div>
+
+<div class="feature-box">
+
+Vector Databases
+
+</div>
+
+<div class="feature-box">
+
+RAG Applications
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+POPULAR EMBEDDING MODELS
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-stars"></i>
+
 Popular Embedding Models
+
 </h2>
 
 </div>
@@ -706,48 +1173,59 @@ Popular Embedding Models
 <tr>
 <th>Model</th>
 <th>Company</th>
+<th>Use Case</th>
 </tr>
 
 <tr>
 <td>text-embedding-3-small</td>
 <td>OpenAI</td>
+<td>General RAG</td>
 </tr>
 
 <tr>
 <td>text-embedding-3-large</td>
 <td>OpenAI</td>
+<td>Advanced Retrieval</td>
 </tr>
 
 <tr>
 <td>BGE</td>
 <td>BAAI</td>
-</tr>
-
-<tr>
-<td>Sentence Transformers</td>
-<td>Hugging Face</td>
+<td>Open Source RAG</td>
 </tr>
 
 <tr>
 <td>E5</td>
 <td>Microsoft</td>
+<td>Search Systems</td>
+</tr>
+
+<tr>
+<td>Sentence Transformers</td>
+<td>Hugging Face</td>
+<td>Local RAG</td>
 </tr>
 
 </table>
 
 </section>
 
+<!-- =====================================
+VECTOR DATABASE
+===================================== -->
 
-    <!-- ==========================
-         VECTOR DATABASE
-    =========================== -->
-
-    <section class="section" id="vector">
+<section
+class="section"
+id="vector">
 
 <div class="section-header">
 
 <h2>
-🗄️ What is a Vector Database?
+
+<i class="bi bi-database"></i>
+
+What is a Vector Database?
+
 </h2>
 
 </div>
@@ -756,45 +1234,94 @@ Popular Embedding Models
 
 <p>
 
-After creating embeddings, we need a place to store them.
+After generating embeddings,
+we need a place to store them.
 
 </p>
 
 <p>
 
-A Vector Database stores embeddings instead of normal text.
+Traditional databases store text.
 
 </p>
 
 <p>
 
-It allows fast similarity search.
+Vector databases store embeddings.
+
+</p>
+
+<p>
+
+These embeddings are used
+for similarity search.
 
 </p>
 
 </div>
 
-<div class="card">
+</section>
 
-<h3>
-Traditional Database
-</h3>
+<!-- =====================================
+TRADITIONAL VS VECTOR
+===================================== -->
 
-<p>
+<section class="section">
 
-Stores rows and columns.
+<div class="section-header">
 
-</p>
+<h2>
 
-<h3>
-Vector Database
-</h3>
+Traditional Database vs Vector Database
 
-<p>
+</h2>
 
-Stores numerical vectors.
+</div>
 
-</p>
+<table>
+
+<tr>
+<th>Traditional DB</th>
+<th>Vector DB</th>
+</tr>
+
+<tr>
+<td>Stores Text</td>
+<td>Stores Vectors</td>
+</tr>
+
+<tr>
+<td>Keyword Search</td>
+<td>Semantic Search</td>
+</tr>
+
+<tr>
+<td>Exact Matching</td>
+<td>Meaning Matching</td>
+</tr>
+
+<tr>
+<td>SQL Queries</td>
+<td>Similarity Search</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- =====================================
+POPULAR VECTOR DATABASES
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Popular Vector Databases
+
+</h2>
 
 </div>
 
@@ -808,90 +1335,52 @@ Stores numerical vectors.
 
 <tr>
 <td>ChromaDB</td>
-<td>Simple local vector database</td>
-<td>Learning & Projects</td>
+<td>Easy local vector database</td>
+<td>Learning Projects</td>
 </tr>
 
 <tr>
 <td>FAISS</td>
-<td>Facebook similarity search engine</td>
-<td>Fast local search</td>
+<td>Facebook vector search engine</td>
+<td>Fast Search</td>
 </tr>
 
 <tr>
 <td>Pinecone</td>
-<td>Managed cloud vector database</td>
-<td>Production systems</td>
+<td>Managed cloud solution</td>
+<td>Production Apps</td>
 </tr>
 
 <tr>
 <td>Qdrant</td>
-<td>Open-source vector search</td>
-<td>Enterprise projects</td>
+<td>Open source vector DB</td>
+<td>Enterprise RAG</td>
 </tr>
 
 <tr>
 <td>Weaviate</td>
-<td>AI-native vector database</td>
-<td>Large-scale RAG</td>
+<td>AI Native Database</td>
+<td>Large Scale Systems</td>
 </tr>
 
 </table>
 
 </section>
 
-    <!-- ==========================
-         SIMILARITY SEARCH
-    =========================== -->
-
-    <section class="section">
-
-        <div class="section-header">
-
-            <h2>
-                Similarity Search
-            </h2>
-
-        </div>
-
-        <div class="card">
-
-            <p>
-
-                Similarity Search finds the most relevant chunks
-                based on semantic meaning rather than exact keywords.
-
-            </p>
-
-            <pre>
-
-Question:
-"What are symptoms of diabetes?"
-
-↓
-
-Embedding Generated
-
-↓
-
-Search Similar Embeddings
-
-↓
-
-Retrieve Relevant Medical Chunks
-
-            </pre>
-
-        </div>
-
-    </section>
+<!-- =====================================
+SIMILARITY SEARCH
+===================================== -->
 
 <section class="section">
 
 <div class="section-header">
 
 <h2>
-🎯 What is Fine Tuning?
+
+<i class="bi bi-search"></i>
+
+What is Similarity Search?
+
 </h2>
 
 </div>
@@ -900,31 +1389,141 @@ Retrieve Relevant Medical Chunks
 
 <p>
 
-Fine Tuning means taking a pretrained model and training it further on your own dataset.
+Similarity Search is the heart of RAG.
 
 </p>
 
 <p>
 
-Example:
+Instead of searching exact words,
+it searches meaning.
 
 </p>
 
-<ul>
+</div>
 
-<li>Medical Reports</li>
+<div class="card">
 
-<li>Legal Documents</li>
+<pre>
 
-<li>College Notes</li>
+QUESTION
 
-<li>Company Data</li>
+What are symptoms of diabetes?
 
-</ul>
+↓
+
+Embedding Generated
+
+↓
+
+Search Vector Database
+
+↓
+
+Find Similar Medical Chunks
+
+↓
+
+Retrieve Top Results
+
+</pre>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+Keyword Search
+
+</h3>
 
 <p>
 
-The model learns patterns from your specific domain.
+Requires exact words.
+
+</p>
+
+<h3>
+
+Similarity Search
+
+</h3>
+
+<p>
+
+Understands meaning.
+
+</p>
+
+</div>
+
+</section>
+<!-- =====================================
+FINE TUNING INTRODUCTION
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-bullseye"></i>
+
+What is Fine Tuning?
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<p>
+
+Fine Tuning is the process of taking
+an already trained Large Language Model
+and training it again on a custom dataset.
+
+</p>
+
+<p>
+
+Instead of teaching the model from scratch,
+we improve an existing model for a specific task.
+
+</p>
+
+<p>
+
+Think of it like a graduate student.
+
+</p>
+
+<p>
+
+The student already knows mathematics,
+science, history, and languages.
+
+</p>
+
+<p>
+
+Now we give specialized training
+to become a doctor.
+
+</p>
+
+<p>
+
+The student doesn't start learning from zero.
+
+</p>
+
+<p>
+
+Similarly, Fine Tuning teaches
+a pretrained model a specialized skill.
 
 </p>
 
@@ -932,11 +1531,161 @@ The model learns patterns from your specific domain.
 
 </section>
 
-    <!-- ==========================
-         RAG VS FINE TUNING
-    =========================== -->
+<!-- =====================================
+FINE TUNING EXAMPLE
+===================================== -->
 
-    <table>
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-arrow-left-right"></i>
+
+Fine Tuning Example
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+BASE MODEL
+
+General Knowledge
+
+↓
+
+Fine Tuning Dataset
+
+Medical Reports
+
+↓
+
+TRAINING
+
+↓
+
+MEDICAL MODEL
+
+Understands
+Medical Terminology Better
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- =====================================
+WHEN TO USE FINE TUNING
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+When Should We Use Fine Tuning?
+
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+Medical AI
+
+</div>
+
+<div class="feature-box">
+
+Legal AI
+
+</div>
+
+<div class="feature-box">
+
+Coding Assistants
+
+</div>
+
+<div class="feature-box">
+
+Customer Support Bots
+
+</div>
+
+<div class="feature-box">
+
+Financial Systems
+
+</div>
+
+<div class="feature-box">
+
+Company Specific AI
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+RAG VS FINE TUNING
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-columns-gap"></i>
+
+RAG vs Fine Tuning
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<p>
+
+Many beginners confuse RAG and Fine Tuning.
+
+</p>
+
+<p>
+
+Both improve AI systems but solve different problems.
+
+</p>
+
+<p>
+
+Fine Tuning changes the model.
+
+</p>
+
+<p>
+
+RAG keeps the model unchanged
+and provides external knowledge.
+
+</p>
+
+</div>
+
+<table>
 
 <tr>
 <th>Feature</th>
@@ -969,225 +1718,559 @@ The model learns patterns from your specific domain.
 </tr>
 
 <tr>
-<td>Speed</td>
+<td>Setup Time</td>
 <td>Fast</td>
-<td>Slow Setup</td>
+<td>Slow</td>
+</tr>
+
+<tr>
+<td>Maintenance</td>
+<td>Easy</td>
+<td>Complex</td>
 </tr>
 
 <tr>
 <td>Best Use Case</td>
-<td>Document QA</td>
+<td>Document Retrieval</td>
 <td>Behavior Learning</td>
 </tr>
 
 </table>
 
+</section>
 
+<!-- =====================================
+RAG VS TRADITIONAL SEARCH
+===================================== -->
 
-    <!-- ==========================
-         APPLICATIONS
-    =========================== -->
-
-    <section class="section">
-
-        <div class="section-header">
-
-            <h2>
-                Real World Applications
-            </h2>
-
-        </div>
-
-        <div class="feature-grid">
-
-            <div class="feature-box">
-                📄 PDF Chatbot
-            </div>
-
-            <div class="feature-box">
-                🏥 Medical Assistant
-            </div>
-
-            <div class="feature-box">
-                🎓 Student Learning Assistant
-            </div>
-
-            <div class="feature-box">
-                ⚖ Legal Assistant
-            </div>
-
-            <div class="feature-box">
-                📚 Research Assistant
-            </div>
-
-            <div class="feature-box">
-                🏢 Company Knowledge Bot
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==========================
-         PROJECT
-    =========================== -->
-
-    <section class="section" id="project">
-
-        <div class="section-header">
-
-            <h2>
-                🚀 Mini Project:
-                Blood Report RAG Assistant
-            </h2>
-
-        </div>
-
-        <div class="workflow">
-
-            <div class="step">
-                Upload PDF
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Extract Text
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Chunking
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Create Embeddings
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Store in ChromaDB
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Retrieve Relevant Chunks
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Send to Groq Llama 3
-            </div>
-
-            <div class="arrow">↓</div>
-
-            <div class="step">
-                Generate Medical Explanation
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==========================
-         TECH STACK
-    =========================== -->
-
-    <section class="section">
-
-        <div class="section-header">
-
-            <h2>
-                Technologies Used
-            </h2>
-
-        </div>
-
-        <div class="feature-grid">
-
-            <div class="feature-box">
-                Python
-            </div>
-
-            <div class="feature-box">
-                LangChain
-            </div>
-
-            <div class="feature-box">
-                ChromaDB
-            </div>
-
-            <div class="feature-box">
-                Groq
-            </div>
-
-            <div class="feature-box">
-                Llama 3
-            </div>
-
-            <div class="feature-box">
-                Gradio
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ==========================
-         LEARNING OUTCOMES
-    =========================== -->
-
-    <section class="section">
-
-        <div class="card">
-
-            <h2>
-                🎓 Learning Outcomes
-            </h2>
-
-            <ul>
-
-                <li>Understand RAG Architecture</li>
-
-                <li>Understand Embeddings</li>
-
-                <li>Understand Chunking</li>
-
-                <li>Understand Vector Databases</li>
-
-                <li>Understand Similarity Search</li>
-
-                <li>Build RAG Chatbots</li>
-
-                <li>Build Medical AI Systems</li>
-
-                <li>Use Groq + LangChain + ChromaDB</li>
-
-                <li>Create Real World AI Projects</li>
-
-            </ul>
-
-        </div>
-
-    </section>
 <section class="section">
 
 <div class="section-header">
 
 <h2>
-🚀 Complete Blood Report RAG Project
+
+RAG vs Traditional Search
+
+</h2>
+
+</div>
+
+<table>
+
+<tr>
+<th>Traditional Search</th>
+<th>RAG</th>
+</tr>
+
+<tr>
+<td>Keyword Matching</td>
+<td>Semantic Search</td>
+</tr>
+
+<tr>
+<td>Returns Documents</td>
+<td>Returns Answers</td>
+</tr>
+
+<tr>
+<td>User Reads Results</td>
+<td>AI Reads Results</td>
+</tr>
+
+<tr>
+<td>No Reasoning</td>
+<td>LLM Reasoning</td>
+</tr>
+
+<tr>
+<td>Static Search</td>
+<td>Dynamic Search</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- =====================================
+LANGCHAIN INTRODUCTION
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-diagram-2"></i>
+
+What is LangChain?
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<p>
+
+LangChain is one of the most popular frameworks
+for building AI applications.
+
+</p>
+
+<p>
+
+It helps developers connect:
+
+</p>
+
+<ul>
+
+<li>LLMs</li>
+
+<li>Vector Databases</li>
+
+<li>Documents</li>
+
+<li>Memory</li>
+
+<li>Agents</li>
+
+<li>Tools</li>
+
+</ul>
+
+<p>
+
+Most modern RAG applications
+are built using LangChain.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================
+LANGCHAIN ARCHITECTURE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+LangChain RAG Architecture
+
+</h2>
+
+</div>
+
+<div class="workflow">
+
+<div class="step">
+
+PDF File
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+PDF Loader
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Text Splitter
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Embedding Model
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+ChromaDB
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Retriever
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Prompt Template
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Groq Llama 3
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Final Answer
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+COMPLETE RAG PIPELINE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Complete RAG Pipeline
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+DOCUMENTS
+
+↓
+
+LOADER
+
+↓
+
+CHUNKING
+
+↓
+
+EMBEDDINGS
+
+↓
+
+VECTOR DATABASE
+
+↓
+
+USER QUESTION
+
+↓
+
+QUERY EMBEDDING
+
+↓
+
+SIMILARITY SEARCH
+
+↓
+
+TOP MATCHING CHUNKS
+
+↓
+
+PROMPT AUGMENTATION
+
+↓
+
+LLM
+
+↓
+
+FINAL RESPONSE
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- =====================================
+REAL WORLD APPLICATIONS
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-globe"></i>
+
+Real World Applications of RAG
+
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+<h3>
+
+PDF Chatbots
+
+</h3>
+
+<p>
+
+Ask questions from PDFs.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Healthcare Systems
+
+</h3>
+
+<p>
+
+Analyze reports and medical documents.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Research Assistants
+
+</h3>
+
+<p>
+
+Search scientific papers.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Legal Assistants
+
+</h3>
+
+<p>
+
+Search laws and contracts.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Education Platforms
+
+</h3>
+
+<p>
+
+Study assistants and tutors.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<h3>
+
+Enterprise Search
+
+</h3>
+
+<p>
+
+Search internal company documents.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+ADVANTAGES
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Advantages of RAG
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<ul>
+
+<li>
+
+Provides latest information.
+
+</li>
+
+<li>
+
+Reduces hallucinations.
+
+</li>
+
+<li>
+
+Works with private documents.
+
+</li>
+
+<li>
+
+No model retraining required.
+
+</li>
+
+<li>
+
+Easy to update knowledge.
+
+</li>
+
+<li>
+
+Cost effective.
+
+</li>
+
+<li>
+
+Highly scalable.
+
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- =====================================
+LIMITATIONS
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Limitations of RAG
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<ul>
+
+<li>
+
+Poor chunking can reduce accuracy.
+
+</li>
+
+<li>
+
+Bad embeddings reduce retrieval quality.
+
+</li>
+
+<li>
+
+Large vector databases require resources.
+
+</li>
+
+<li>
+
+Retrieval adds extra latency.
+
+</li>
+
+<li>
+
+Incorrect documents produce incorrect answers.
+
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- =====================================
+COMMON INTERVIEW QUESTIONS
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+RAG Interview Questions
+
 </h2>
 
 </div>
@@ -1195,29 +2278,561 @@ The model learns patterns from your specific domain.
 <div class="card">
 
 <h3>
-Install Libraries
+
+1. What is RAG?
+
 </h3>
 
-<pre>
-pip install langchain
-pip install chromadb
-pip install sentence-transformers
-pip install groq
-pip install pdfplumber
-pip install gradio
-</pre>
+<p>
+
+Retrieval-Augmented Generation is a technique
+that combines information retrieval with LLMs.
+
+</p>
+
+<hr>
+
+<h3>
+
+2. Why is RAG needed?
+
+</h3>
+
+<p>
+
+To reduce hallucinations and use external knowledge.
+
+</p>
+
+<hr>
+
+<h3>
+
+3. What is Chunking?
+
+</h3>
+
+<p>
+
+Splitting large documents into smaller pieces.
+
+</p>
+
+<hr>
+
+<h3>
+
+4. What are Embeddings?
+
+</h3>
+
+<p>
+
+Numerical representations of text.
+
+</p>
+
+<hr>
+
+<h3>
+
+5. What is a Vector Database?
+
+</h3>
+
+<p>
+
+A database that stores embeddings.
+
+</p>
+
+<hr>
+
+<h3>
+
+6. Difference between RAG and Fine Tuning?
+
+</h3>
+
+<p>
+
+RAG retrieves knowledge.
+Fine Tuning modifies the model.
+
+</p>
+
+</div>
+
+</section>
+<!-- =====================================
+PROJECT INTRODUCTION
+===================================== -->
+
+<section
+class="section"
+id="project">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-hospital"></i>
+
+Mini Project:
+Blood Report RAG Assistant
+
+</h2>
 
 </div>
 
 <div class="card">
 
-<h3>
-Workflow
-</h3>
+<p>
+
+Now that we understand RAG,
+let's build a real-world application.
+
+</p>
+
+<p>
+
+In this project,
+users upload a Blood Report PDF
+and ask questions about the report.
+
+</p>
+
+<p>
+
+The RAG system retrieves relevant
+medical information from the report
+and provides intelligent explanations.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================
+PROJECT ARCHITECTURE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Project Architecture
+
+</h2>
+
+</div>
+
+<div class="workflow">
+
+<div class="step">
+
+User Uploads PDF
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+PDF Loader
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Chunking
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Embeddings
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+ChromaDB
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+User Question
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Retriever
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Groq Llama 3
+
+</div>
+
+<div class="arrow">↓</div>
+
+<div class="step">
+
+Answer
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+INPUT OUTPUT EXAMPLE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Input vs Output Example
+
+</h2>
+
+</div>
+
+<div class="card">
 
 <pre>
 
-Upload PDF
+INPUT PDF
+
+Blood Report.pdf
+
+--------------------------------
+
+USER QUESTION
+
+Is my hemoglobin normal?
+
+--------------------------------
+
+RAG SYSTEM
+
+Retrieves Relevant Chunk
+
+Hemoglobin = 10.5 g/dL
+
+Normal Range = 12-16 g/dL
+
+--------------------------------
+
+OUTPUT
+
+Your hemoglobin appears lower
+than the normal range.
+
+This may indicate anemia.
+Consult a healthcare professional
+for proper evaluation.
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- =====================================
+GROQ API SETUP
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+<i class="bi bi-key"></i>
+
+Create Groq API Key
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<ol>
+
+<li>
+
+Visit:
+
+https://console.groq.com
+
+</li>
+
+<li>
+
+Create Account
+
+</li>
+
+<li>
+
+Verify Email
+
+</li>
+
+<li>
+
+Login to Console
+
+</li>
+
+<li>
+
+Open API Keys Section
+
+</li>
+
+<li>
+
+Click Create API Key
+
+</li>
+
+<li>
+
+Copy Your Key
+
+</li>
+
+<li>
+
+Save It Securely
+
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- =====================================
+GOOGLE COLAB
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Google Colab Setup
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<ol>
+
+<li>
+
+Open Google Colab
+
+</li>
+
+<li>
+
+Create New Notebook
+
+</li>
+
+<li>
+
+Rename Notebook
+
+</li>
+
+<li>
+
+Install Libraries
+
+</li>
+
+<li>
+
+Paste Code
+
+</li>
+
+<li>
+
+Run Application
+
+</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- =====================================
+INSTALL LIBRARIES
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Install Required Libraries
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+pip install langchain
+
+pip install chromadb
+
+pip install sentence-transformers
+
+pip install groq
+
+pip install pdfplumber
+
+pip install gradio
+
+pip install langchain-community
+
+pip install langchain-text-splitters
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- =====================================
+TECH STACK
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Technologies Used
+
+</h2>
+
+</div>
+
+<table>
+
+<tr>
+<th>Technology</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>Programming Language</td>
+</tr>
+
+<tr>
+<td>LangChain</td>
+<td>RAG Framework</td>
+</tr>
+
+<tr>
+<td>ChromaDB</td>
+<td>Vector Database</td>
+</tr>
+
+<tr>
+<td>Sentence Transformers</td>
+<td>Embeddings</td>
+</tr>
+
+<tr>
+<td>Groq</td>
+<td>LLM API</td>
+</tr>
+
+<tr>
+<td>Llama 3</td>
+<td>Language Model</td>
+</tr>
+
+<tr>
+<td>Gradio</td>
+<td>User Interface</td>
+</tr>
+
+<tr>
+<td>PDFPlumber</td>
+<td>PDF Processing</td>
+</tr>
+
+</table>
+
+</section>
+
+<!-- =====================================
+COMPLETE WORKFLOW
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Complete Project Workflow
+
+</h2>
+
+</div>
+
+<div class="card">
+
+<pre>
+
+PDF Upload
 
 ↓
 
@@ -1237,7 +2852,19 @@ Store in ChromaDB
 
 ↓
 
-Retrieve Chunks
+User Question
+
+↓
+
+Question Embedding
+
+↓
+
+Similarity Search
+
+↓
+
+Top Chunks Retrieved
 
 ↓
 
@@ -1245,33 +2872,185 @@ Groq Llama 3
 
 ↓
 
-Answer
+Final Answer
 
 </pre>
 
 </div>
 
+</section>
+
+<!-- =====================================
+PROJECT CODE
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Core Implementation Logic
+
+</h2>
+
+</div>
+
 <div class="card">
 
-<h3>
-Technologies Used
-</h3>
+<pre>
+
+1. Load PDF
+
+2. Extract Text
+
+3. Create Chunks
+
+4. Generate Embeddings
+
+5. Store In ChromaDB
+
+6. Accept User Question
+
+7. Retrieve Similar Chunks
+
+8. Send Context To Groq
+
+9. Generate Answer
+
+10. Display Result
+
+</pre>
+
+</div>
+
+</section>
+
+<!-- =====================================
+RAG BENEFITS IN THIS PROJECT
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Why Use RAG Here?
+
+</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+Uses Uploaded Reports
+
+</div>
+
+<div class="feature-box">
+
+No Retraining Needed
+
+</div>
+
+<div class="feature-box">
+
+Private Data Supported
+
+</div>
+
+<div class="feature-box">
+
+Accurate Retrieval
+
+</div>
+
+<div class="feature-box">
+
+Lower Cost
+
+</div>
+
+<div class="feature-box">
+
+Real-Time Analysis
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+PROJECT EXTENSIONS
+===================================== -->
+
+<section class="section">
+
+<div class="section-header">
+
+<h2>
+
+Future Enhancements
+
+</h2>
+
+</div>
+
+<div class="card">
 
 <ul>
 
-<li>LangChain</li>
+<li>
 
-<li>ChromaDB</li>
+Multi-PDF Support
 
-<li>Sentence Transformers</li>
+</li>
 
-<li>Groq</li>
+<li>
 
-<li>Llama 3</li>
+Medical Knowledge Base
 
-<li>Gradio</li>
+</li>
 
-<li>PDFPlumber</li>
+<li>
+
+Voice Assistant
+
+</li>
+
+<li>
+
+Doctor Recommendation
+
+</li>
+
+<li>
+
+Disease Prediction
+
+</li>
+
+<li>
+
+Report Comparison
+
+</li>
+
+<li>
+
+Patient Dashboard
+
+</li>
+
+<li>
+
+Multilingual Support
+
+</li>
 
 </ul>
 
@@ -1279,28 +3058,339 @@ Technologies Used
 
 </section>
 
+<!-- =====================================
+FAQ
+===================================== -->
 
-    <!-- ==========================
-         FOOTER
-    =========================== -->
+<section class="section">
 
-    <footer>
+<div class="section-header">
 
-        <h2>
-            🚀 RAG Mastery Complete
-        </h2>
+<h2>
 
-        <p>
+Frequently Asked Questions
 
-            You now understand Retrieval-Augmented Generation,
-            one of the most important technologies powering
-            modern AI systems.
+</h2>
 
-        </p>
+</div>
 
-    </footer>
+<div class="card">
 
-    <script src="script.js"></script>
+<h3>
+
+What is RAG?
+
+</h3>
+
+<p>
+
+RAG combines retrieval and generation.
+
+</p>
+
+<hr>
+
+<h3>
+
+Why not directly use LLM?
+
+</h3>
+
+<p>
+
+LLMs may hallucinate or lack recent information.
+
+</p>
+
+<hr>
+
+<h3>
+
+Why ChromaDB?
+
+</h3>
+
+<p>
+
+It is simple and beginner friendly.
+
+</p>
+
+<hr>
+
+<h3>
+
+Why Embeddings?
+
+</h3>
+
+<p>
+
+They help computers understand meaning.
+
+</p>
+
+<hr>
+
+<h3>
+
+Can RAG work with private documents?
+
+</h3>
+
+<p>
+
+Yes.
+
+That is one of its biggest advantages.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- =====================================
+LEARNING OUTCOMES
+===================================== -->
+
+<section class="section">
+
+<div class="card">
+
+<h2>
+
+<i class="bi bi-mortarboard"></i>
+
+Learning Outcomes
+
+</h2>
+
+<ul>
+
+<li>
+
+Understand RAG Architecture
+
+</li>
+
+<li>
+
+Understand Chunking
+
+</li>
+
+<li>
+
+Understand Chunk Overlap
+
+</li>
+
+<li>
+
+Understand Embeddings
+
+</li>
+
+<li>
+
+Understand Vector Databases
+
+</li>
+
+<li>
+
+Understand Similarity Search
+
+</li>
+
+<li>
+
+Understand LangChain
+
+</li>
+
+<li>
+
+Understand ChromaDB
+
+</li>
+
+<li>
+
+Understand Fine Tuning
+
+</li>
+
+<li>
+
+Build Real World RAG Applications
+
+</li>
+
+<li>
+
+Build Medical AI Systems
+
+</li>
+
+<li>
+
+Use Groq Llama 3
+
+</li>
+
+<li>
+
+Develop Complete End-to-End AI Projects
+
+</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- =====================================
+MEVI NOTES BANNER
+===================================== -->
+
+<section class="section">
+
+<div class="card"
+style="text-align:center;">
+
+<h2>
+
+<i class="bi bi-book-half"></i>
+
+Learn with Mevi Technologies
+
+</h2>
+
+<p>
+
+Explore AI,
+Machine Learning,
+Deep Learning,
+Generative AI,
+Large Language Models,
+Agentic AI,
+RAG,
+Python,
+Data Science
+and Real World Projects.
+
+</p>
+
+<p>
+
+Continue Learning Through
+The Mevi Notes Portal.
+
+</p>
+
+<a href="https://www.mevitechnologies.com/notes/"
+class="btn"
+target="_blank">
+
+Visit Mevi Notes Portal
+
+</a>
+
+</div>
+
+</section>
+
+<!-- =====================================
+COURSE COMPLETION
+===================================== -->
+
+<section class="section">
+
+<div class="card">
+
+<h2>
+
+Congratulations
+
+</h2>
+
+<p>
+
+You have successfully completed
+the Retrieval-Augmented Generation
+learning journey.
+
+</p>
+
+<p>
+
+You now understand:
+
+</p>
+
+<ul>
+
+<li>RAG Fundamentals</li>
+
+<li>Chunking</li>
+
+<li>Embeddings</li>
+
+<li>Vector Databases</li>
+
+<li>Similarity Search</li>
+
+<li>Fine Tuning</li>
+
+<li>LangChain</li>
+
+<li>ChromaDB</li>
+
+<li>Groq</li>
+
+<li>Llama 3</li>
+
+<li>Real World RAG Projects</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- =====================================
+FOOTER
+===================================== -->
+
+<footer>
+
+<h2>
+
+RAG Mastery Complete
+
+</h2>
+
+<p>
+
+Retrieval-Augmented Generation is one of the
+most important technologies powering modern AI.
+
+</p>
+
+<p>
+
+Keep Learning.
+Keep Building.
+Keep Innovating.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 

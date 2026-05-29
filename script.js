@@ -1,84 +1,6 @@
-/* =========================================
-   RAG WEBSITE JAVASCRIPT
-   Minimal Professional Animations
-========================================= */
-
-
-/* =========================================
-   FADE IN ANIMATION
-========================================= */
-
-const sections = document.querySelectorAll('.section');
-
-const observer = new IntersectionObserver(
-
-(entries) => {
-
-    entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.classList.add('show');
-
-        }
-
-    });
-
-},
-
-{
-    threshold: 0.15
-}
-
-);
-
-sections.forEach((section) => {
-
-    observer.observe(section);
-
-});
-
-
-/* =========================================
-   ACTIVE NAVIGATION HIGHLIGHT
-========================================= */
-
-const navLinks = document.querySelectorAll('.nav-links a');
-
-window.addEventListener('scroll', () => {
-
-    let current = "";
-
-    sections.forEach((section) => {
-
-        const sectionTop = section.offsetTop;
-
-        if (pageYOffset >= sectionTop - 200) {
-
-            current = section.getAttribute('id');
-
-        }
-
-    });
-
-    navLinks.forEach((link) => {
-
-        link.classList.remove('active');
-
-        if (
-            link.getAttribute('href') === `#${current}`
-        ) {
-            link.classList.add('active');
-        }
-
-    });
-
-});
-
-
-/* =========================================
-   SMOOTH SCROLL
-========================================= */
+// ======================================
+// Smooth Scroll
+// ======================================
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
@@ -86,239 +8,135 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         e.preventDefault();
 
-        const target = document.querySelector(
+        const target =
+        document.querySelector(
             this.getAttribute('href')
         );
 
-        target.scrollIntoView({
-            behavior: 'smooth'
-        });
+        if(target){
+
+            target.scrollIntoView({
+                behavior:'smooth'
+            });
+
+        }
 
     });
 
 });
 
 
-/* =========================================
-   SCROLL PROGRESS BAR
-========================================= */
+// ======================================
+// Active Navbar
+// ======================================
 
-const progressBar = document.createElement('div');
+const sections =
+document.querySelectorAll("section");
 
-progressBar.classList.add('progress-bar');
+const navLinks =
+document.querySelectorAll(".nav-links a");
 
-document.body.appendChild(progressBar);
+window.addEventListener("scroll", () => {
 
-window.addEventListener('scroll', () => {
+    let current = "";
 
-    const totalHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+    sections.forEach(section => {
 
-    const progress =
-        (window.pageYOffset / totalHeight) * 100;
+        const sectionTop =
+        section.offsetTop - 200;
 
-    progressBar.style.width = progress + "%";
+        if(window.scrollY >= sectionTop){
+
+            current = section.id;
+
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(
+            link.getAttribute("href")
+            === "#" + current
+        ){
+
+            link.classList.add("active");
+
+        }
+
+    });
 
 });
 
 
-/* =========================================
-   TYPEWRITER EFFECT FOR HERO
-========================================= */
+// ======================================
+// Progress Bar
+// ======================================
 
-const heroTitle = document.querySelector('.hero h1');
+const progressBar =
+document.createElement("div");
 
-if(heroTitle){
+progressBar.className =
+"progress-bar";
 
-    const text = heroTitle.innerText;
-
-    heroTitle.innerText = "";
-
-    let i = 0;
-
-    function typeWriter(){
-
-        if(i < text.length){
-
-            heroTitle.innerHTML += text.charAt(i);
-
-            i++;
-
-            setTimeout(typeWriter, 50);
-
-        }
-
-    }
-
-    typeWriter();
-
-}
-
-
-/* =========================================
-   CARD HOVER ANIMATION
-========================================= */
-
-const cards = document.querySelectorAll(
-'.card, .feature-box'
+document.body.appendChild(
+progressBar
 );
 
-cards.forEach((card)=>{
+window.addEventListener("scroll",()=>{
 
-    card.addEventListener('mouseenter',()=>{
+    const totalHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
 
-        card.style.transform =
-        'translateY(-8px)';
+    const progress =
+    (window.scrollY / totalHeight) * 100;
 
-    });
-
-    card.addEventListener('mouseleave',()=>{
-
-        card.style.transform =
-        'translateY(0px)';
-
-    });
+    progressBar.style.width =
+    progress + "%";
 
 });
 
 
-/* =========================================
-   COUNT ANIMATION
-========================================= */
+// ======================================
+// Back To Top Button
+// ======================================
 
-function animateValue(id,start,end,duration){
+const topBtn =
+document.createElement("button");
 
-    let range = end - start;
+topBtn.innerHTML =
+'<i class="bi bi-arrow-up"></i>';
 
-    let current = start;
-
-    let increment = end > start ? 1 : -1;
-
-    let stepTime = Math.abs(
-        Math.floor(duration / range)
-    );
-
-    const obj = document.getElementById(id);
-
-    if(!obj) return;
-
-    let timer = setInterval(function(){
-
-        current += increment;
-
-        obj.innerHTML = current;
-
-        if(current == end){
-
-            clearInterval(timer);
-
-        }
-
-    },stepTime);
-
-}
-
-
-/* =========================================
-   TOOLTIP FOR RAG TERMS
-========================================= */
-
-const terms = document.querySelectorAll('.term');
-
-terms.forEach(term => {
-
-    term.addEventListener('mouseenter', () => {
-
-        term.style.color = '#60a5fa';
-
-    });
-
-    term.addEventListener('mouseleave', () => {
-
-        term.style.color = 'white';
-
-    });
-
-});
-
-
-/* =========================================
-   BACK TO TOP BUTTON
-========================================= */
-
-const topBtn = document.createElement('button');
-
-topBtn.innerHTML = "↑";
-
-topBtn.classList.add('top-btn');
+topBtn.className =
+"top-btn";
 
 document.body.appendChild(topBtn);
 
-window.addEventListener('scroll',()=>{
+window.addEventListener("scroll",()=>{
 
-    if(window.scrollY > 400){
+    if(window.scrollY > 500){
 
-        topBtn.style.display='block';
+        topBtn.style.display="block";
 
     }
-
     else{
 
-        topBtn.style.display='none';
+        topBtn.style.display="none";
 
     }
 
 });
 
-topBtn.addEventListener('click',()=>{
+topBtn.onclick = ()=>{
 
     window.scrollTo({
 
         top:0,
-
-        behavior:'smooth'
+        behavior:"smooth"
 
     });
 
-});
-
-
-/* =========================================
-   RAG WORKFLOW ANIMATION
-========================================= */
-
-const workflowSteps =
-document.querySelectorAll('.step');
-
-workflowSteps.forEach((step,index)=>{
-
-    step.style.opacity = "0";
-
-    setTimeout(()=>{
-
-        step.style.opacity = "1";
-
-        step.style.transition = "1s";
-
-    },index * 300);
-
-});
-
-
-/* =========================================
-   WELCOME MESSAGE
-========================================= */
-
-setTimeout(()=>{
-
-console.log(
-"🚀 Welcome to RAG Explained!"
-);
-
-},1000);
-
-
-/* =========================================
-   END
-========================================= */
+};
